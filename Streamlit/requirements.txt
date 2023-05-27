@@ -1,3 +1,2 @@
-scikit-learn
-joblib
-matplotlib
+joblib==1.0.1
+matplotlib==3.4.3
