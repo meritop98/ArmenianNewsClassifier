@@ -6,8 +6,8 @@
 
 import streamlit as st
 import pandas as pd
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.neural_network import MLPClassifier
+# from sklearn.feature_extraction.text import TfidfVectorizer
+# from sklearn.neural_network import MLPClassifier
 import joblib
 import matplotlib.pyplot as plt
 
