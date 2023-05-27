@@ -16,7 +16,7 @@ import joblib
 import matplotlib.pyplot as plt
 
 # Load the MLP model weights
-mlp = joblib.load('ArmenianNewsClassifier/Streamlit/data/mlp_model.pkl')
+mlp = joblib.load('Streamlit/mlp_model.pkl')
 
 # Load the vectorizer
 vectorizer = joblib.load('vectorizer.pkl')
