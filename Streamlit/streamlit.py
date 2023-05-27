@@ -4,9 +4,10 @@
 # In[1]:
 
 import subprocess
-
+subprocess.call(["pip", "install", "joblib"])
 # Install dependencies
 subprocess.call(["pip", "install", "-r", "requirements.txt"])
+subprocess.call(["pip", "install", "matplotlib"])
 import streamlit as st
 import pandas as pd
 # from sklearn.feature_extraction.text import TfidfVectorizer
