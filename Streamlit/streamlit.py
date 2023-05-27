@@ -16,16 +16,16 @@ import joblib
 import matplotlib.pyplot as plt
 
 # Load the MLP model weights
-mlp = joblib.load('mlp_model.pkl')
+mlp = joblib.load('https://github.com/Hripsime-Gasoyan/ArmenianNewsClassifier.git/Streamlit/mlp_model.pkl')
 
 # Load the vectorizer
-vectorizer = joblib.load('vectorizer.pkl')
+vectorizer = joblib.load('https://github.com/Hripsime-Gasoyan/ArmenianNewsClassifier.git/Streamlit/vectorizer.pkl')
 
 # Load the model score
-model_score = joblib.load('f1_score.pkl')
+model_score = joblib.load('https://github.com/Hripsime-Gasoyan/ArmenianNewsClassifier.git/Streamlit/f1_score.pkl')
 
 # Load the misclassification plot
-misclassification_plot = 'misclassification_plot.jpg'
+misclassification_plot = 'https://github.com/Hripsime-Gasoyan/ArmenianNewsClassifier.git/Streamlit/misclassification_plot.jpg'
 
 # App description
 st.title("News Classification Model")
@@ -33,7 +33,7 @@ st.title("News Classification Model")
 # video_file = open('vecteezy_world-breaking-news-digital-earth-hud-rotating-globe-rotating_6299370_777.mp4', 'rb')
 # video_bytes = video_file.read()
 # st.video(video_bytes)
-plot="robot.jpg"
+plot="https://github.com/Hripsime-Gasoyan/ArmenianNewsClassifier.git/Streamlit/robot.jpg"
 st.image(plot, use_column_width=True)
 
 
@@ -45,11 +45,11 @@ st.write("<p style='font-size: 18px; line-height: 1.5;'>The goal of the project 
 
 st.markdown("---")
 st.subheader("Data")
-df = pd.read_csv('data_cleaned.csv')
+df = pd.read_csv('https://github.com/Hripsime-Gasoyan/ArmenianNewsClassifier.git/Streamlit/data_cleaned.csv')
 st.dataframe(df)
 st.write("Dimensions of the Data: {} rows, {} columns".format(df.shape[0], df.shape[1]))
 
-plot="category_counts_plot.jpg"
+plot="https://github.com/Hripsime-Gasoyan/ArmenianNewsClassifier.git/Streamlit/category_counts_plot.jpg"
 st.markdown("---")
 st.subheader("Category Counts")
 st.image(plot, use_column_width=True)
