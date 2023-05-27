@@ -3,7 +3,10 @@
 
 # In[1]:
 
+import subprocess
 
+# Install dependencies
+subprocess.call(["pip", "install", "-r", "requirements.txt"])
 import streamlit as st
 import pandas as pd
 # from sklearn.feature_extraction.text import TfidfVectorizer
