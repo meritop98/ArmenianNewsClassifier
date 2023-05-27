@@ -19,13 +19,13 @@ import matplotlib.pyplot as plt
 mlp = joblib.load('Streamlit/mlp_model.pkl')
 
 # Load the vectorizer
-vectorizer = joblib.load('vectorizer.pkl')
+vectorizer = joblib.load('Streamlit/vectorizer.pkl')
 
 # Load the model score
-model_score = joblib.load('f1_score.pkl')
+model_score = joblib.load('Streamlit/f1_score.pkl')
 
 # Load the misclassification plot
-misclassification_plot = 'misclassification_plot.jpg'
+misclassification_plot = 'Streamlit/misclassification_plot.jpg'
 
 # App description
 st.title("News Classification Model")
@@ -45,7 +45,7 @@ st.write("<p style='font-size: 18px; line-height: 1.5;'>The goal of the project 
 
 st.markdown("---")
 st.subheader("Data")
-df = pd.read_csv('data_cleaned.csv')
+df = pd.read_csv('Streamlit/data_cleaned.csv')
 st.dataframe(df)
 st.write("Dimensions of the Data: {} rows, {} columns".format(df.shape[0], df.shape[1]))
 
