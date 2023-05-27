@@ -26,17 +26,18 @@ misclassification_plot = 'misclassification_plot.jpg'
 # App description
 st.title("News Classification Model")
 
+# video_file = open('vecteezy_world-breaking-news-digital-earth-hud-rotating-globe-rotating_6299370_777.mp4', 'rb')
+# video_bytes = video_file.read()
+# st.video(video_bytes)
+plot="robot.jpg"
+st.image(plot, use_column_width=True)
+
+
+
 st.subheader("Problem")
 
 st.write("<p style='font-size: 18px; line-height: 1.5;'>The goal of the project is to collect different types of news  from the Internet (through web scraping), process and obtain a model on this set of data, which will make it possible to predict what the given news is about.</p>",unsafe_allow_html=True)
 
-st.markdown("---")
-st.subheader("Model Information:")
-
-# Larger text using CSS styling
-st.write("<p style='font-size: 18px; line-height: 1.5;'>This classification model is based on a Multi-Layer Perceptron (MLP) neural network.</p>", unsafe_allow_html=True)
-st.write("<p style='font-size: 18px; line-height: 1.5;'>It was trained on a dataset of armenian news articles and can predict the category of a given article.</p>", unsafe_allow_html=True)
-st.write("<p style='font-size: 18px; line-height: 1.5;'>The model achieved an accuracy of {:.2f}% during training.</p>".format(model_score * 100), unsafe_allow_html=True)
 
 st.markdown("---")
 st.subheader("Data")
@@ -87,8 +88,18 @@ if st.button("Predict"):
             st.error(str(e))
     else:
         st.warning("Please enter some text.")
+
+st.markdown("---")
+st.subheader("Model Information:")
+
+# Larger text using CSS styling
+st.write("<p style='font-size: 18px; line-height: 1.5;'>This classification model is based on a Multi-Layer Perceptron (MLP) neural network.</p>", unsafe_allow_html=True)
+st.write("<p style='font-size: 18px; line-height: 1.5;'>It was trained on a dataset of armenian news articles and can predict the category of a given article.</p>", unsafe_allow_html=True)
+st.write("<p style='font-size: 18px; line-height: 1.5;'>The model achieved an accuracy of {:.2f}% during training.</p>".format(model_score * 100), unsafe_allow_html=True)
+
 st.markdown("---")
 # Display the misclassification plot
+
 st.subheader("Most Frequently Misclassified Categories")
 st.image(misclassification_plot, use_column_width=True)
 
