@@ -33,7 +33,7 @@ st.title("News Classification Model")
 # video_file = open('vecteezy_world-breaking-news-digital-earth-hud-rotating-globe-rotating_6299370_777.mp4', 'rb')
 # video_bytes = video_file.read()
 # st.video(video_bytes)
-plot="robot.jpg"
+plot="Streamlit/robot.jpg"
 st.image(plot, use_column_width=True)
 
 
