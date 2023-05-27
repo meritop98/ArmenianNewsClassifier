@@ -49,7 +49,7 @@ df = pd.read_csv('Streamlit/data_cleaned.csv')
 st.dataframe(df)
 st.write("Dimensions of the Data: {} rows, {} columns".format(df.shape[0], df.shape[1]))
 
-plot="category_counts_plot.jpg"
+plot="Streamlit/category_counts_plot.jpg"
 st.markdown("---")
 st.subheader("Category Counts")
 st.image(plot, use_column_width=True)
