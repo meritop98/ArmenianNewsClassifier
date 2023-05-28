@@ -1,11 +1,3 @@
-transformers==4.29.2
-tensorflow===2.12
-torch~=2.0.1
-pandas~=2.0.1
-scikit-learn~=1.2.2
-torchvision~=0.15.2
-sklearn~=0.0.post5
-tqdm~=4.65.0
-deep_translator==1.11.0
-nltk~=3.8.1
-selenium==4.8.2
+scikit-learn
+joblib
+matplotlib
